@@ -42,3 +42,16 @@ function limpiarCaja(){
     // Limpiar el input
         document.getElementById("amigo").value = "";
 }
+
+
+function sortearAmigo(){
+
+    
+    let nombreSorteo = Math.floor(Math.random() * nombres.length);
+    let ganador = nombres[nombreSorteo];
+    
+
+    //Limpiar lista de nombres
+   document.getElementById("listaAmigos").innerHTML="";
+   document.getElementById("resultado").textContent = "🎉 El ganador es: " + ganador;
+}
